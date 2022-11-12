@@ -1,0 +1,13 @@
+name = "self-deleting"
+main = "src/index.js"
+compatibility_date = "2022-11-12"
+
+[env.dev]
+kv_namespaces = [
+  { binding = "STORAGE", id = "4401e58fa811494782b174928682f5e3", preview_id = "4401e58fa811494782b174928682f5e3" }
+]
+
+[env.production]
+kv_namespaces = [
+  { binding = "STORAGE", id = "502a2b5aaa7848b1a40e7603dca31891" }
+]
